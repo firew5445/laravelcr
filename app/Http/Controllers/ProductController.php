@@ -44,7 +44,6 @@ class ProductController extends Controller
      */
     public function show(Product $product) : View
     {
-        
         return view('products.show', compact('product'));
     }
 
