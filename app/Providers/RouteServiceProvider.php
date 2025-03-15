@@ -10,7 +10,8 @@ class RouteServiceProvider extends ServiceProvider
     /**
      * Define the default home route for authenticated users.
      */
-    public const HOME = '/ashboard'; //  public const HOME = '/dashboard'; ✅ This should be outside any method
+    //public const HOME = '/ashboard'; //  public const HOME = '/dashboard'; ✅ This should be outside any method
+    protected $redirectTo = '/login'; // Change from '/dashboard' to '/login'
 
     /**
      * Register services.
